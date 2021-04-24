@@ -1,0 +1,7 @@
+*.vtk
+output*
+OUT_*
+*.out
+*.oub
+CACTUS.csv
+*.bat

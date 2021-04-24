@@ -1,0 +1,55 @@
+&ConfigInputs
+	 GPFlag  = 0
+	 nr 	= 1
+	 nti 	= 72
+	 convrg	= -1.0000000000
+	 DSFlag=0
+	 ixterm=1 ! 1 to ignore wake points beyond x/R = xstop, 0 to use all wake points (default).
+     xstop =5 !  If ixterm = 1, defines x/R beyond which wake points are ig nored (default 5)
+     prflag=0
+     AddMassFlag=0
+     InductionFlag=0
+/End
+&CaseInputs
+	 rho 	= 0.0023280000
+	 vis 	= 0.00000038856
+	 tempr = 60.0000000000
+	 slex = 0.0000000000
+	 hAG 	= 0.0000000000
+	 hBLRef = 32.9375000501
+	 RPM 	= 9.549296585513721
+	 Ut 	= 1.0000000000
+	 itower = 0
+	 tower_Npts = 10
+	 tower_x = 0.0000000000
+	 tower_ybot = 0.0000000000
+	 tower_ytop = 4.2500000000
+	 tower_D = 0.1693336720
+	 tower_CD = 1.0000000000
+	 CTExcrM = 0.0000000000
+	 ! Turbine geometry
+	 GeomFilePath='CACTUS_Geom.dat'
+	 ! Airfoil section data
+	 nSect = 1
+	 AFDPath = 'CACTUS_Polar.dat' 
+/End
+&ConfigOutputs
+	 DiagOutFlag = 1
+	 DynStallOutFlag = 1
+	 BladeElemOutFlag = 1
+	 WakeElemOutFlag = 0
+	 WakeVTKOutFlag = 1
+	 FieldOutFlag = 0
+	 FieldOutIntervalTimesteps = 72
+	 FieldOutStartTimestep = 72
+	 FieldOutEndTimestep = -1
+	 nxgrid = 11
+	 nygrid = 101
+	 nzgrid = 11
+	 xgridL = -10
+	 xgridU = 10
+	 ygridL = 0
+	 ygridU = 10
+	 zgridL = -10
+	 zgridU = 10
+/End
